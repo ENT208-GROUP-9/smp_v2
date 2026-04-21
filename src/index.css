@@ -999,6 +999,10 @@ button {
   background: rgba(29, 155, 240, 0.12);
 }
 
+.sheet-card textarea {
+  resize: vertical;
+}
+
 @keyframes marker-breath {
   0%,
   100% {
