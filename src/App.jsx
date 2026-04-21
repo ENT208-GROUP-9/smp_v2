@@ -1235,6 +1235,27 @@ function App() {
                                   </span>
                                 </div>
                               )}
+                              {pageMode === 'setup' &&
+                                selectedAnchor &&
+                                selectedAnchor.x != null &&
+                                selectedAnchor.y != null &&
+                                !currentAnchorReady && (
+                                  <div
+                                    className="placement-guide setup-focus-marker"
+                                    style={{
+                                      left: `${selectedAnchor.x}%`,
+                                      top: `${selectedAnchor.y}%`,
+                                    }}
+                                  >
+                                    <span className="anchor-ring pending-ring" />
+                                    <span className="anchor-core ghost-core pending-core">
+                                      <MapPinned size={16} strokeWidth={2} />
+                                    </span>
+                                    <span className="anchor-label pending-label">
+                                      {(selectedAnchor.name || selectedAnchor.short) + ' not confirmed'}
+                                    </span>
+                                  </div>
+                                )}
                               {pageMode === 'map' && placingTask && role === 'uploader' && (
                                 <div className="placement-guide task-placement-guide">
                                   <span className="task-marker-core is-stack ghost-task-core">

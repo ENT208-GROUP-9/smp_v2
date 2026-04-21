@@ -648,9 +648,29 @@ button {
   pointer-events: none;
 }
 
+.setup-focus-marker {
+  z-index: 7;
+}
+
 .ghost-core {
   color: #7c5a00;
   background: linear-gradient(180deg, #ffe48b 0%, var(--accent-gold) 100%);
+}
+
+.pending-core {
+  box-shadow: 0 0 0 4px rgba(255, 250, 241, 0.95), 0 12px 28px rgba(255, 203, 71, 0.34);
+}
+
+.pending-ring {
+  width: 58px;
+  height: 58px;
+  border-color: rgba(255, 170, 0, 0.58);
+  background: rgba(255, 203, 71, 0.18);
+}
+
+.pending-label {
+  top: -44px;
+  background: rgba(111, 73, 0, 0.9);
 }
 
 .ghost-task-core {
