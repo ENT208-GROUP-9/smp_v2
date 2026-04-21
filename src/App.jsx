@@ -38,12 +38,12 @@ const STORAGE_MAP_META_KEY = 'campus-map-meta';
 const STORAGE_TASKS_KEY = 'campus-map-tasks';
 
 const TASK_TYPES = [
-  { id: 'main', label: '涓荤嚎浠诲姟', tone: 'main' },
-  { id: 'side', label: '鏀嚎浠诲姟', tone: 'side' },
-  { id: 'daily', label: '鏃ュ父浠诲姟', tone: 'daily' },
-  { id: 'event', label: '娲诲姩浠诲姟', tone: 'event' },
-  { id: 'danger', label: '棰勮浠诲姟', tone: 'danger' },
-  { id: 'explore', label: '鎺㈢储鐐逛綅', tone: 'explore' },
+  { id: 'main', label: 'Main Task', tone: 'main' },
+  { id: 'side', label: 'Side Task', tone: 'side' },
+  { id: 'daily', label: 'Daily Task', tone: 'daily' },
+  { id: 'event', label: 'Event Task', tone: 'event' },
+  { id: 'danger', label: 'Alert Task', tone: 'danger' },
+  { id: 'explore', label: 'Explore Point', tone: 'explore' },
 ];
 
 const TASK_SNAP_DISTANCE = 1.4;
@@ -224,15 +224,15 @@ function getMapDistance(from, to) {
 }
 
 function getDirectionLabel(targetBearing, heading) {
-  if (heading == null) return '鍦板浘鏂瑰悜';
+  if (heading == null) return 'Map direction';
   const relative = normalizeDegrees(targetBearing - heading);
-  if (relative < 22.5 || relative >= 337.5) return '鍓嶆柟';
+  if (relative < 22.5 || relative >= 337.5) return 'Ahead';
   if (relative < 67.5) return 'front-right';
-  if (relative < 112.5) return '鍙充晶';
+  if (relative < 112.5) return 'Right';
   if (relative < 157.5) return 'back-right';
-  if (relative < 202.5) return '鍚庢柟';
+  if (relative < 202.5) return 'Behind';
   if (relative < 247.5) return 'back-left';
-  if (relative < 292.5) return '宸︿晶';
+  if (relative < 292.5) return 'Left';
   return 'front-left';
 }
 
@@ -820,10 +820,10 @@ function App() {
         <button
           className="hide-toggle"
           onClick={() => setHudHidden((value) => !value)}
-          aria-label={hudHidden ? '鏄剧ず闈㈡澘' : '闅愯棌闈㈡澘'}
+          aria-label={hudHidden ? 'Show panel' : 'Hide panel'}
         >
           {hudHidden ? <Eye size={16} /> : <EyeOff size={16} />}
-          {hudHidden ? '鏄剧ず' : '闅愯棌'}
+          {hudHidden ? 'Show' : 'Hide'}
         </button>
 
         {pageMode === 'welcome' && (
@@ -850,7 +850,7 @@ function App() {
                   <div className="panel-row">
                     <div>
                       <span className="eyebrow">Workspace</span>
-                      <h2>{pageMode === 'setup' ? '閿氱偣鏍″噯' : '浠诲姟鍦板浘'}</h2>
+                      <h2>{pageMode === 'setup' ? 'Anchor Setup' : 'Task Map'}</h2>
                     </div>
                     <button
                       className="role-switch"
@@ -866,19 +866,19 @@ function App() {
                   <div className="panel-actions compact-actions">
                     <button className="ghost-pill" onClick={() => importInputRef.current?.click()}>
                       <Import size={16} />
-                      瀵煎叆
+                      Import
                     </button>
                     <button className="ghost-pill" onClick={exportWorkspace}>
                       <Upload size={16} />
-                      瀵煎嚭
+                      Export
                     </button>
                     <button className="ghost-pill" onClick={() => fileInputRef.current?.click()}>
                       <ImageIcon size={16} />
-                      鎹㈠浘
+                      Change map
                     </button>
                     <button className="ghost-pill warning" onClick={clearWorkspace}>
                       <Trash2 size={16} />
-                      娓呯┖
+                      Clear
                     </button>
                   </div>
                 </div>
@@ -896,7 +896,7 @@ function App() {
                       <div className="panel-actions compact-actions">
                         <button className="primary-pill" onClick={addAnchor}>
                           <Plus size={16} />
-                          鏂板閿氱偣
+                          Add anchor
                         </button>
                       </div>
                     </div>
@@ -1056,7 +1056,8 @@ function App() {
                         {orientationStatus === 'needs-permission' && (
                           <button className="ghost-pill" onClick={requestOrientationAccess}>
                             <LocateFixed size={16} />
-                            鍚敤鎸囧崡閽?                          </button>
+                            Enable compass
+                          </button>
                         )}
                         {role === 'uploader' && (
                           <button
@@ -1064,13 +1065,13 @@ function App() {
                             onClick={() => setPlacingTask((value) => !value)}
                           >
                             {placingTask ? <X size={16} /> : <Plus size={16} />}
-                            {placingTask ? '鍙栨秷鎶曟斁' : '鎶曟斁浠诲姟'}
+                            {placingTask ? 'Cancel placing' : 'Place task'}
                           </button>
                         )}
                       </div>
                       <div className="sensor-note">
                         <span>Blue dot: {liveUserPosition ? 'Visible' : 'Bind at least one GPS anchor to show it'}</span>
-                        <span>Heading: {mapHeading == null ? '--' : String(Math.round(mapHeading)) + '?'}</span>
+                        <span>Heading: {mapHeading == null ? '--' : String(Math.round(mapHeading)) + ' deg'}</span>
                       </div>
                     </div>
 
@@ -1138,7 +1139,7 @@ function App() {
                               <span className="task-list-copy">
                                 <strong>{task.title}</strong>
                                 <small>
-                                  {getTaskTypeMeta(task.type).label + ' ? ' + task.directionLabel + ' ? ' + task.distanceLabel}
+                                  {getTaskTypeMeta(task.type).label + ' | ' + task.directionLabel + ' | ' + task.distanceLabel}
                                 </small>
                               </span>
                               <span className={`task-status-chip ${task.status} ${expired ? 'expired' : ''}`}>
@@ -1225,7 +1226,7 @@ function App() {
                                   <span className="task-marker-core is-stack ghost-task-core">
                                     <Plus size={16} strokeWidth={2.4} />
                                   </span>
-                                  <span className="task-marker-label visible-label">鐐瑰嚮鍦板浘鏀剧疆浠诲姟</span>
+                                  <span className="task-marker-label visible-label">Click map to place task</span>
                                 </div>
                               )}
                             </div>
@@ -1344,7 +1345,7 @@ function App() {
                 <div className="sheet-head">
                   <div>
                     <span className="eyebrow">{taskDialogMode === 'edit' ? 'Edit Task' : 'Create Task'}</span>
-                    <h3>{taskDialogMode === 'edit' ? '缂栬緫浠诲姟' : '鏂板缓浠诲姟'}</h3>
+                    <h3>{taskDialogMode === 'edit' ? 'Edit Task' : 'Create Task'}</h3>
                   </div>
                   <button className="icon-ghost" onClick={resetTaskForm}>
                     <X size={18} />
@@ -1353,7 +1354,7 @@ function App() {
 
                 <div className="sheet-body">
                   <label className="field-block">
-                    <span>浠诲姟鍚嶇О</span>
+                    <span>Task title</span>
                     <input
                       value={taskForm.title}
                       onChange={(event) => setTaskForm((current) => ({ ...current, title: event.target.value }))}
@@ -1407,10 +1408,10 @@ function App() {
 
                 <div className="sheet-actions">
                   <button className="ghost-pill" onClick={resetTaskForm}>
-                    鍙栨秷
+                    Cancel
                   </button>
                   <button className="primary-pill" onClick={submitTask} disabled={!taskForm.title.trim()}>
-                    {taskDialogMode === 'edit' ? '淇濆瓨淇敼' : '瀹屾垚鎶曟斁'}
+                    {taskDialogMode === 'edit' ? 'Save changes' : 'Create task'}
                   </button>
                 </div>
               </Motion.div>
@@ -1425,12 +1426,12 @@ function App() {
                 <div className="detail-topbar">
                   <button className="ghost-pill" onClick={() => setSelectedTaskId(null)}>
                     <X size={16} />
-                    鍏抽棴
+                    Close
                   </button>
                   {role === 'uploader' && (
                     <button className="ghost-pill" onClick={() => openTaskEditDialog(selectedTask)}>
                       <PencilLine size={16} />
-                      缂栬緫
+                      Edit
                     </button>
                   )}
                 </div>
