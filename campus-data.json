@@ -1,0 +1,635 @@
+{
+  "locations": [
+    {
+      "id": "xec-central",
+      "campus": "TC",
+      "buildingId": "XEC",
+      "buildingName": "XEC Campus",
+      "floor": "",
+      "room": "",
+      "area": "Central activity area",
+      "entranceHint": "Use the main loop road and follow event signage.",
+      "precision": "campus",
+      "mapPoint": {
+        "x": 78,
+        "y": 32.9
+      },
+      "verified": true
+    },
+    {
+      "id": "m-1018",
+      "campus": "TC",
+      "buildingId": "M",
+      "buildingName": "M Building",
+      "floor": "1F",
+      "room": "M-1018",
+      "area": "Conference room",
+      "entranceHint": "Enter M Building from the south side and follow room signs to M-1018.",
+      "precision": "room",
+      "mapPoint": {
+        "x": 68,
+        "y": 32.4
+      },
+      "verified": true
+    },
+    {
+      "id": "j-students-centre",
+      "campus": "TC",
+      "buildingId": "J",
+      "buildingName": "J Building",
+      "floor": "",
+      "room": "",
+      "area": "Students Centre area",
+      "entranceHint": "Cross the inner bridge toward J Building and look for student activity signage.",
+      "precision": "building",
+      "mapPoint": {
+        "x": 60.5,
+        "y": 64.6
+      },
+      "verified": false
+    },
+    {
+      "id": "ring-a",
+      "campus": "TC",
+      "buildingId": "A",
+      "buildingName": "A White Ring Point",
+      "floor": "",
+      "room": "",
+      "area": "White ring point for A",
+      "entranceHint": "Use the white inner ring corridor at A.",
+      "precision": "connector",
+      "mapPoint": {
+        "x": 81.6,
+        "y": 71.8
+      },
+      "verified": true
+    },
+    {
+      "id": "ring-b",
+      "campus": "TC",
+      "buildingId": "B",
+      "buildingName": "B White Ring Point",
+      "floor": "",
+      "room": "",
+      "area": "White ring point for B",
+      "entranceHint": "Use the white inner ring corridor at B.",
+      "precision": "connector",
+      "mapPoint": {
+        "x": 88.4,
+        "y": 54.6
+      },
+      "verified": true
+    },
+    {
+      "id": "ring-c",
+      "campus": "TC",
+      "buildingId": "C",
+      "buildingName": "C White Ring Point",
+      "floor": "",
+      "room": "",
+      "area": "White ring point for C",
+      "entranceHint": "Use the white inner ring corridor at C.",
+      "precision": "connector",
+      "mapPoint": {
+        "x": 83.3,
+        "y": 35.5
+      },
+      "verified": true
+    },
+    {
+      "id": "ring-d",
+      "campus": "TC",
+      "buildingId": "D",
+      "buildingName": "D White Ring Point",
+      "floor": "",
+      "room": "",
+      "area": "White ring point for D",
+      "entranceHint": "Use the white inner ring corridor at D.",
+      "precision": "connector",
+      "mapPoint": {
+        "x": 72.8,
+        "y": 30.3
+      },
+      "verified": true
+    },
+    {
+      "id": "ring-e",
+      "campus": "TC",
+      "buildingId": "E",
+      "buildingName": "E White Ring Point",
+      "floor": "",
+      "room": "",
+      "area": "White ring point for E",
+      "entranceHint": "Use the white inner ring corridor at E.",
+      "precision": "connector",
+      "mapPoint": {
+        "x": 63.3,
+        "y": 34.5
+      },
+      "verified": true
+    },
+    {
+      "id": "ring-f",
+      "campus": "TC",
+      "buildingId": "F",
+      "buildingName": "F White Ring Point",
+      "floor": "",
+      "room": "",
+      "area": "White ring point for F",
+      "entranceHint": "Use the white inner ring corridor at F.",
+      "precision": "connector",
+      "mapPoint": {
+        "x": 56.8,
+        "y": 56.6
+      },
+      "verified": true
+    },
+    {
+      "id": "ring-g",
+      "campus": "TC",
+      "buildingId": "G",
+      "buildingName": "G White Ring Point",
+      "floor": "",
+      "room": "",
+      "area": "White ring point for G",
+      "entranceHint": "Use the white inner ring corridor at G.",
+      "precision": "connector",
+      "mapPoint": {
+        "x": 64.3,
+        "y": 72.6
+      },
+      "verified": true
+    },
+    {
+      "id": "ab-2002",
+      "campus": "TC",
+      "buildingId": "AB",
+      "buildingName": "A-B Building",
+      "floor": "2F",
+      "room": "AB2002",
+      "area": "Industry-education forum room",
+      "entranceHint": "Use A/B Building entrance, go to 2F, then follow signs to AB2002.",
+      "precision": "room",
+      "mapPoint": {
+        "x": 85,
+        "y": 63.2
+      },
+      "verified": true
+    },
+    {
+      "id": "bc-corridor-2f",
+      "campus": "TC",
+      "buildingId": "B-C",
+      "buildingName": "B-C White Ring Connector",
+      "floor": "2F",
+      "room": "",
+      "area": "White ring midpoint between B and C",
+      "entranceHint": "Use the white inner ring corridor between B and C.",
+      "precision": "connector",
+      "mapPoint": {
+        "x": 85.8,
+        "y": 45
+      },
+      "verified": true
+    },
+    {
+      "id": "ring-ab",
+      "campus": "TC",
+      "buildingId": "AB",
+      "buildingName": "A-B White Ring Connector",
+      "floor": "",
+      "room": "",
+      "area": "White ring midpoint between A and B",
+      "entranceHint": "Use the white inner ring corridor between A and B.",
+      "precision": "connector",
+      "mapPoint": {
+        "x": 85,
+        "y": 63.2
+      },
+      "verified": true
+    },
+    {
+      "id": "ring-cd",
+      "campus": "TC",
+      "buildingId": "CD",
+      "buildingName": "C-D White Ring Connector",
+      "floor": "",
+      "room": "",
+      "area": "White ring midpoint between C and D",
+      "entranceHint": "Use the white inner ring corridor between C and D.",
+      "precision": "connector",
+      "mapPoint": {
+        "x": 78,
+        "y": 32.9
+      },
+      "verified": true
+    },
+    {
+      "id": "ring-de",
+      "campus": "TC",
+      "buildingId": "DE",
+      "buildingName": "D-E White Ring Connector",
+      "floor": "",
+      "room": "",
+      "area": "White ring midpoint between D and E",
+      "entranceHint": "Use the white inner ring corridor between D and E.",
+      "precision": "connector",
+      "mapPoint": {
+        "x": 68,
+        "y": 32.4
+      },
+      "verified": true
+    },
+    {
+      "id": "ring-ef",
+      "campus": "TC",
+      "buildingId": "EF",
+      "buildingName": "E-F White Ring Connector",
+      "floor": "",
+      "room": "",
+      "area": "White ring midpoint between E and F",
+      "entranceHint": "Use the white inner ring corridor between E and F.",
+      "precision": "connector",
+      "mapPoint": {
+        "x": 60,
+        "y": 45.5
+      },
+      "verified": true
+    },
+    {
+      "id": "ring-fg",
+      "campus": "TC",
+      "buildingId": "FG",
+      "buildingName": "F-G White Ring Connector",
+      "floor": "",
+      "room": "",
+      "area": "White ring midpoint between F and G",
+      "entranceHint": "Use the white inner ring corridor between F and G.",
+      "precision": "connector",
+      "mapPoint": {
+        "x": 60.5,
+        "y": 64.6
+      },
+      "verified": true
+    },
+    {
+      "id": "ring-ga",
+      "campus": "TC",
+      "buildingId": "GA",
+      "buildingName": "G-A White Ring Connector",
+      "floor": "",
+      "room": "",
+      "area": "White ring midpoint between G and A",
+      "entranceHint": "Use the white inner ring corridor between G and A.",
+      "precision": "connector",
+      "mapPoint": {
+        "x": 72.9,
+        "y": 76
+      },
+      "verified": true
+    },
+    {
+      "id": "g-1006",
+      "campus": "TC",
+      "buildingId": "G",
+      "buildingName": "G Building",
+      "floor": "1F",
+      "room": "G-1006",
+      "area": "Lecture room",
+      "entranceHint": "Enter G Building from the inner loop and follow signs to G-1006.",
+      "precision": "room",
+      "mapPoint": {
+        "x": 64.3,
+        "y": 72.6
+      },
+      "verified": true
+    },
+    {
+      "id": "d-building",
+      "campus": "TC",
+      "buildingId": "D",
+      "buildingName": "D Building",
+      "floor": "",
+      "room": "",
+      "area": "D Building area",
+      "entranceHint": "Use the inner loop road and follow signs to D Building.",
+      "precision": "building",
+      "mapPoint": {
+        "x": 72.8,
+        "y": 30.3
+      },
+      "verified": true
+    },
+    {
+      "id": "a-2034-2035",
+      "campus": "TC",
+      "buildingId": "A",
+      "buildingName": "A Building",
+      "floor": "2F",
+      "room": "A-2034 / A-2035",
+      "area": "Academic Literacies Centre rooms",
+      "entranceHint": "Use A Building entrance, go to 2F, then follow signs to A-2034 and A-2035.",
+      "precision": "room",
+      "mapPoint": {
+        "x": 81.6,
+        "y": 71.8
+      },
+      "verified": true
+    },
+    {
+      "id": "synterra-c-4019",
+      "campus": "TC",
+      "buildingId": "C",
+      "buildingName": "Synterra C Building",
+      "floor": "4F",
+      "room": "C-4019",
+      "area": "Demo Day assessment room",
+      "entranceHint": "Enter Synterra C Building, go to 4F, and prepare at your assigned team table.",
+      "precision": "room",
+      "mapPoint": {
+        "x": 83.3,
+        "y": 35.5
+      },
+      "verified": true
+    },
+    {
+      "id": "ga-2001",
+      "campus": "TC",
+      "buildingId": "GA",
+      "buildingName": "GA Building",
+      "floor": "2F",
+      "room": "GA-2001",
+      "area": "Poster competition venue",
+      "entranceHint": "Use the inner loop route to GA Building, go to 2F, then follow event signage to GA-2001.",
+      "precision": "room",
+      "mapPoint": {
+        "x": 72.9,
+        "y": 76
+      },
+      "verified": true
+    },
+    {
+      "id": "a-festival-area",
+      "campus": "TC",
+      "buildingId": "A",
+      "buildingName": "A Building",
+      "floor": "",
+      "room": "",
+      "area": "Festival area",
+      "entranceHint": "Use the main A Building entrance and follow festival booths.",
+      "precision": "building",
+      "mapPoint": {
+        "x": 81.6,
+        "y": 71.8
+      },
+      "verified": false
+    },
+    {
+      "id": "c-innovation-factory",
+      "campus": "TC",
+      "buildingId": "C",
+      "buildingName": "C Building",
+      "floor": "",
+      "room": "",
+      "area": "Innovation Factory / X3 CoVenture area",
+      "entranceHint": "Enter C Building and follow signage for Innovation Factory or X3 CoVenture.",
+      "precision": "building",
+      "mapPoint": {
+        "x": 83.3,
+        "y": 35.5
+      },
+      "verified": false
+    }
+  ],
+  "events": [
+    {
+      "id": "tc-iot-hongwu-lecture-2026",
+      "title": "HongWU Cognitive Big Model Special Lecture",
+      "type": "academic",
+      "organizer": "School of Internet of Things",
+      "official": false,
+      "sourceUrl": "",
+      "sourceLabel": "IoT school announcement",
+      "startTime": "2026-05-13T12:30",
+      "endTime": "2026-05-13T13:30",
+      "locationId": "g-1006",
+      "studentLenses": [
+        "iot"
+      ],
+      "summary": "Special lecture on HongWU: Hierarchical On-demand Cognitive Big Model with World Utility. English session with refreshments provided.",
+      "audience": "Students interested in IoT, cognitive agents, and big models",
+      "registration": "Scan the poster QR code and register before 11 May 2026 for shuttle arrangement.",
+      "reviewStatus": "published"
+    },
+    {
+      "id": "tc-alc-ielts-speaking-2026",
+      "title": "ALC IELTS Speaking Course",
+      "type": "academic",
+      "organizer": "Academic Literacies Centre Taicang",
+      "official": false,
+      "sourceUrl": "",
+      "sourceLabel": "ALC forum announcement",
+      "startTime": "2026-05-10T10:00",
+      "endTime": "2026-05-10T12:00",
+      "locationId": "a-2034-2035",
+      "studentLenses": [
+        "campus"
+      ],
+      "summary": "IELTS speaking course covering likely exam topics, vocabulary, grammar, pronunciation, exam techniques, speaking practice, and feedback.",
+      "audience": "Students preparing for IELTS speaking",
+      "registration": "Click the course link or scan the poster QR code to register.",
+      "reviewStatus": "published"
+    },
+    {
+      "id": "tc-ent208-demo-day-assessment-2026",
+      "title": "ENT208TC Demo Day Assessment",
+      "type": "exam",
+      "organizer": "ENT208TC Module Team",
+      "official": false,
+      "sourceUrl": "",
+      "sourceLabel": "ENT208TC forum announcement",
+      "startTime": "2026-05-08T09:00",
+      "endTime": "2026-05-08T18:00",
+      "locationId": "synterra-c-4019",
+      "studentLenses": [
+        "campus"
+      ],
+      "summary": "Mandatory Demo Day assessment in Week 10. Teams present for 6 minutes followed by 4 minutes of Q&A, and should record the full session.",
+      "audience": "ENT208TC students",
+      "registration": "Attend your usual session punctually and prepare a backup screenshot or video.",
+      "reviewStatus": "published"
+    },
+    {
+      "id": "tc-iot-fyp-poster-competition-2026",
+      "title": "IoT FYP Poster Competition 2026",
+      "type": "exhibition",
+      "organizer": "School of Internet of Things",
+      "official": false,
+      "sourceUrl": "",
+      "sourceLabel": "IoT school announcement",
+      "startTime": "2026-05-18T12:00",
+      "endTime": "2026-05-18T15:00",
+      "locationId": "ga-2001",
+      "studentLenses": [
+        "iot"
+      ],
+      "summary": "IoT Year 4 students present their academic achievements, followed by an award ceremony and IoT customized lucky draw prizes.",
+      "audience": "Students interested in IoT and final year projects",
+      "registration": "Come to GA-2001 to support Year 4 students.",
+      "reviewStatus": "published"
+    },
+    {
+      "id": "tc-icaie-2026",
+      "title": "2026 2nd International Conference on AI and Education",
+      "type": "academic",
+      "organizer": "XJTLU Academy of Future Education",
+      "official": true,
+      "sourceUrl": "https://www.xjtlu.edu.cn/en/events/2026/05/2026-2nd-international-conference-on-ai-and-education",
+      "sourceLabel": "XJTLU official event",
+      "startTime": "2026-05-13T10:00",
+      "endTime": "2026-05-15T17:00",
+      "locationId": "xec-central",
+      "studentLenses": [
+        "ai-computing"
+      ],
+      "summary": "Hybrid conference on AI-enabled syntegrative education, personalization, and gamification.",
+      "audience": "Students and staff interested in AI education",
+      "registration": "Check official event page",
+      "reviewStatus": "published"
+    },
+    {
+      "id": "tc-teaching-innovation-2026",
+      "title": "11th Teaching Innovation Award Final",
+      "type": "academic",
+      "organizer": "XJTLU Institute of Leadership and Education Advanced Development",
+      "official": true,
+      "sourceUrl": "https://www.xjtlu.edu.cn/en/events/2026/05/2026-xjtlu-20th-anniversary-teaching-innovation-award-final-and-the-11th-annual-conference-on-innovation-in-higher-education",
+      "sourceLabel": "XJTLU official event",
+      "startTime": "2026-05-22T09:00",
+      "endTime": "2026-05-24T21:00",
+      "locationId": "m-1018",
+      "studentLenses": [
+        "ai-computing"
+      ],
+      "summary": "Higher education innovation conference and national teaching innovation award final.",
+      "audience": "Teaching staff, researchers, and students",
+      "registration": "Check official event page",
+      "reviewStatus": "published"
+    },
+    {
+      "id": "tc-tedx-salon-2026",
+      "title": "TEDxXJTLU Salon: Sytergration+",
+      "type": "student-life",
+      "organizer": "TEDxXJTLU",
+      "official": false,
+      "sourceUrl": "",
+      "sourceLabel": "Campus activity listing",
+      "startTime": "2026-05-22T18:30",
+      "endTime": "2026-05-24T21:00",
+      "locationId": "j-students-centre",
+      "studentLenses": [
+        "campus"
+      ],
+      "summary": "Salon series for the XJTLU 20th anniversary, including Taicang campus sessions.",
+      "audience": "Students",
+      "registration": "Follow campus announcement",
+      "reviewStatus": "published"
+    },
+    {
+      "id": "tc-belt-road-forum-2026",
+      "title": "Belt and Road Industry-Education Forum",
+      "type": "forum",
+      "organizer": "XJTLU Entrepreneur College (Taicang)",
+      "official": true,
+      "sourceUrl": "https://www.xjtlu.edu.cn/en/events/2026/05/the-belt-and-road-industry-education-integration-and-industrial-innovation-forum",
+      "sourceLabel": "XJTLU official event",
+      "startTime": "2026-05-23T09:00",
+      "endTime": "2026-05-23T18:00",
+      "locationId": "ab-2002",
+      "studentLenses": [
+        "fintech-industry"
+      ],
+      "summary": "Forum on industry-education integration and industrial innovation.",
+      "audience": "Students, staff, and industry partners",
+      "registration": "Check official event page",
+      "reviewStatus": "published"
+    },
+    {
+      "id": "tc-research-exhibition-2026",
+      "title": "Two Decades of Light Research Exhibition",
+      "type": "exhibition",
+      "organizer": "XJTLU",
+      "official": true,
+      "sourceUrl": "https://www.xjtlu.edu.cn/en/events/2026/05/research-exhibition-two-decades-of-light-xjtlu20th-anniversary-research-exhibition-of-xjtlu",
+      "sourceLabel": "XJTLU official event",
+      "startTime": "2026-05-26T09:00",
+      "endTime": "2026-05-31T18:00",
+      "locationId": "bc-corridor-2f",
+      "studentLenses": [
+        "campus"
+      ],
+      "summary": "Taicang campus phase of the XJTLU 20th anniversary research exhibition.",
+      "audience": "All students and staff",
+      "registration": "Walk-in",
+      "reviewStatus": "published"
+    },
+    {
+      "id": "tc-ime-life-festival-2026",
+      "title": "IME Life Festival",
+      "type": "festival",
+      "organizer": "School of Intelligent Manufacturing Ecosystem",
+      "official": true,
+      "sourceUrl": "https://www.xjtlu.edu.cn/en/events/2026/05/ime-life-festival",
+      "sourceLabel": "XJTLU official event",
+      "startTime": "2026-05-28T11:00",
+      "endTime": "2026-05-30T17:00",
+      "locationId": "a-festival-area",
+      "studentLenses": [
+        "ime"
+      ],
+      "summary": "Coffee booths, smart device experiences, industry dialogue, SE exhibition, and social zones.",
+      "audience": "Students and visitors",
+      "registration": "Check campus announcement",
+      "reviewStatus": "published"
+    },
+    {
+      "id": "tc-intelligent-manufacturing-2026",
+      "title": "Intelligent Manufacturing Forum",
+      "type": "careers",
+      "organizer": "XJTLU Entrepreneur College (Taicang)",
+      "official": true,
+      "sourceUrl": "https://www.xjtlu.edu.cn/en/events/2026/05/intelligent-manufacturing-forum-forging-the-future-of-industry",
+      "sourceLabel": "XJTLU official event",
+      "startTime": "2026-05-29T09:00",
+      "endTime": "2026-05-29T18:00",
+      "locationId": "c-innovation-factory",
+      "studentLenses": [
+        "ime"
+      ],
+      "summary": "Forum on intelligent manufacturing and future industry opportunities.",
+      "audience": "Students, staff, and industry partners",
+      "registration": "Check official event page",
+      "reviewStatus": "published"
+    },
+    {
+      "id": "tc-high-tech-high-tea-2026",
+      "title": "High Tech High Tea x XEC Eco-Partner Conference",
+      "type": "forum",
+      "organizer": "XJTLU Entrepreneur College (Taicang)",
+      "official": true,
+      "sourceUrl": "https://www.xjtlu.edu.cn/en/events/2025/12/high-tech-high-tea-2026",
+      "sourceLabel": "XJTLU official event",
+      "startTime": "2026-05-30T09:00",
+      "endTime": "2026-05-30T21:00",
+      "locationId": "xec-central",
+      "studentLenses": [
+        "campus"
+      ],
+      "summary": "Open Campus, Syntegrated City conference and campus bazar at XEC campus.",
+      "audience": "Students, staff, and partners",
+      "registration": "Check official event page",
+      "reviewStatus": "published"
+    }
+  ],
+  "updatedAt": "2026-05-07T16:54:08.097Z"
+}
